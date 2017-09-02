@@ -1,9 +1,4 @@
 #!/bin/bash
-#
-# Script by Aiman Amir
-# Telegram : @NamiaKai
-# ==================================================
-# 
 
 # install sertifikat
 apt-get install ca-certificates
