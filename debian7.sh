@@ -59,8 +59,8 @@ apt-get install figlet
 echo "clear" >> .bashrc
 echo 'figlet -k "$HOSTNAME"' >> .bashrc
 echo 'echo -e "Selamat datang ke server $HOSTNAME"' >> .bashrc
-echo 'echo -e "Script mod by Aiman Amir"' >> .bashrc
-echo 'echo -e "Taip menu untuk menampilkan senarai perintah yang tersedia"' >> .bashrc
+echo 'echo -e "Script mod by Grados"' >> .bashrc
+echo 'echo -e "Taip menu untuk senarai commands"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 
 # install webserver
@@ -69,7 +69,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://raw.github.com/blazevpn/autoscript/master/nginx.conf"
 mkdir -p /home/vps/public_html
-echo "<pre>Setup by Aiman Amir | 081515292117</pre>" > /home/vps/public_html/index.html
+echo "<pre>Setup by Grados</pre>" > /home/vps/public_html/index.html
 wget -O /etc/nginx/conf.d/vps.conf "https://github.com/blazevpn/autoscript/blob/master/vps.conf"
 service nginx restart
 
@@ -139,7 +139,7 @@ service webmin restart
 
 # download script
 cd /usr/bin
-wget -O menu "https://github.com/blazevpn/autoscript/master/menu.sh"
+wget -O menu "https://raw.github.com/blazevpn/autoscript/master/menu.sh"
 wget -O usernew "https://raw.github.com/blazevpn/autoscript/master/usernew.sh"
 wget -O trial "https://raw.github.com/blazevpn/autoscript/master/trial.sh"
 wget -O hapus "https://raw.github.com/blazevpn/autoscript/master/hapus.sh"
@@ -206,7 +206,7 @@ echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
 echo "Timezone : Asia/Malaysia (GMT +8)"  | tee -a log-install.txt
 echo "IPv6     : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Modified by Aiman Amir"  | tee -a log-install.txt
+echo "Modified by Grados"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Log Instalasi --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
